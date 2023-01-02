@@ -79,7 +79,7 @@ function cleanup()
 }
 
 trap cleanup EXIT
-trap 'exit 2' TERM
+trap 'cleanup; exit 2' TERM
 
 #============================
 # Test parameters
